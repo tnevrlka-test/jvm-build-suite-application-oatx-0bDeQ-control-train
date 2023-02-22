@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-jfmf
     spec:
       containers:
-      - image: quay.io/rh_ee_tnevrlka/test-images:024a7b5ef2d44fd5bc12d88f1bc8b96e
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:5eb3d288a8745cff9c74303bb2d6e3509bec96f3383cac6fd4a0bbe9461aa938
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
