@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-jfmf
+  namespace: jvm-build-favy-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:5eb3d288a8745cff9c74303bb2d6e3509bec96f3383cac6fd4a0bbe9461aa938
+        name: container-image
+        resources: {}
+status: {}
